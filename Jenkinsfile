@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred-id')
-        IMAGE_NAME = 'rashmidevops1/flask-portfolio'
+        IMAGE_NAME = 'ssmson/flask-portfolio'
     }
 
     stages {
