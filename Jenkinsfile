@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred-id')
-        IMAGE_NAME = 'rashmidevops1/flask-portfolio'
+        IMAGE_NAME = 'madhusudhanap05/flask-portfolio'
     }
 
     stages {
@@ -42,7 +42,7 @@ pipeline {
             echo '✅ Build, Push, and Deploy completed successfully!'
         }
         failure {
-            echo '❌ Pipeline failed. Check logs.'
+            echo '❌ Pipeline failed. Check logs...'
         }
     }
 }
